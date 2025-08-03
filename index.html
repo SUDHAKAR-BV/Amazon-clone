@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-logo">
+        <img src="logo1.png" alt="Amazon Logo">
+      </div>
+      <div class="nav-search">
+        <select>
+          <option>All</option>
+          <option>Electronics</option>
+          <option>Books</option>
+          <option>Clothing</option>
+        </select>
+        <input type="text" id="searchInput" placeholder="Search Amazon" />
+        <button onclick="searchProducts()"><i class="fa fa-search"></i></button>
+      </div>
+      <div class="nav-links">
+        <a href="#">Sign In</a>
+        <a href="#">Lists</a>
+        <a href="#">Orders</a>
+      </div>
+      <div class="nav-cart">
+        <i class="fa fa-shopping-cart"></i>
+        <span id="cartCount">0</span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="promo-banner">
+    Free Shipping on Orders Over $25!
+  </div>
+
+  <div class="promo-content">
+    <img src="sale9.png" alt="Promo Image">
+    <div>
+      <h2>Exclusive Offer!</h2>
+      <p>Get 20% off on your first purchase. Use code: FIRST20</p>
+      <button onclick="alert('Offer applied!')">Shop Now</button>
+    </div>
+  </div>
+
+  <div class="hero">
+    <h2>Shop the Latest Deals!</h2>
+  </div>
+
+  <div class="products" id="products">
+    <!-- Existing products -->
+    <div class="product-card">
+      <img src="headphones.jpeg" alt="Product 1">
+      <h3>SONY G23 Wireless Headphones</h3>
+      <p>₹8,999</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="iphone.jpeg" alt="Product 2">
+      <h3>iPhone 15 pro max 512gb</h3>
+      <p>₹1,20,999</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <!-- 🔽 Added More Products -->
+    <div class="product-card">
+      <img src="protein.jpeg" alt="Product 3">
+      <h3>OP Whey Protein 1kg</h3>
+      <p>₹2,299</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="tv.jpeg" alt="Product 4">
+      <h3>SONY bravia 32inch LED tv</h3>
+      <p>₹25,999</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="bag.jpeg" alt="Product 5">
+      <h3>WildCrafrat 35L Bag</h3>
+      <p>₹899</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="graphic card.jpeg" alt="Product 6">
+      <h3>RTX 3050 Graphic card</h3>
+      <p>₹19,999</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="laptop.jpeg" alt="Product 7">
+      <h3>HP victus ryzen 5</h3>
+      <p>₹69,999</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="ironbox.jpeg" alt="Product 8">
+      <h3>Prestige Ironbox</h3>
+      <p>₹699</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>
+      <a href="#">Conditions of Use</a>
+      <a href="#">Privacy Notice</a>
+      <a href="#">Your Ads Privacy Choices</a>
+    </p>
+    <p>&copy; 2025 Amazon Clone</p>
+  </footer>
+</body>
+</html>
